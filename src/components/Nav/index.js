@@ -10,7 +10,10 @@ const Nav = () => {
           <Link to="/User">User</Link>
         </li>
         <li>
-          <Link to="/Description">Description</Link>
+          <Link to="/Description/:userName">Description</Link>
+        </li>
+        <li>
+          <Link to="/Game">Game</Link>
         </li>
         <li>
           <Link to="/Result">Result</Link>

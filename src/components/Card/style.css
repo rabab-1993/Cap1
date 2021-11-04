@@ -1,0 +1,19 @@
+.grand{
+border: 5px solid #fff;
+
+}
+
+.showImg {
+ 
+    width: 300px;
+    height: 400px;
+    
+
+}
+.hideImg {
+  
+    visibility: hidden;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(27, 2, 136);
+}

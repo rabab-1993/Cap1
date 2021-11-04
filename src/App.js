@@ -3,8 +3,8 @@ import { Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav";
 import User from "./components/User";
 import Result from "./components/Result";
-import Description from "./components/Description/Description";
-import Footer from "./components/Footer"
+import Description from "./components/Description";
+import Game from "./components/Game";
 import "./style.css";
 
 const App = () => {
@@ -13,10 +13,10 @@ const App = () => {
       <Nav />
       <Switch>
         <Route exact path="/User" component={User} />
+        <Route exact path="/Description/:userName" component={Description} />
+        <Route exact path="/Game" component={Game} />
         <Route exact path="/Result" component={Result} />
-        <Route exact path="/Description" component={Description} />
       </Switch>
-      <Footer />
 
     </>
   );
