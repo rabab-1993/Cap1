@@ -2,19 +2,18 @@ import React from 'react'
 import './style.css'
 
 const Card=(props) =>{
-    const change = (e)=>{
-        // console.log(e.target.id);
-        let ids = e.target.id;
-        // console.log(ids);
-        if (props.elem.name === props.elem.name) {
-            // className='showImg';
-            // ids.isSucssed = !ids.isSucssed
-            console.log(props.elem.name);
-        }
+
+    const handelClick =(elem) =>{
+        props.tempImg(elem)// send choosen card to tempfunc in game component
     }
+
     return (
-        <div className="grand">
-        <img src={props.elem.src} id={props.elem.name} key={props.elem.id} onClick={change} className={props.elem.isSucssed ?  `showImg` : `hideImg`} alt=""/>
+        <div className="card">      
+        <img  id="card"
+        src={props.elem.src} 
+        onClick={(e)=>{handelClick(props.elem)}}
+        className={props.elem.isSucssed ? `hideImg` : `showImg`} 
+        alt=""/>
         </div>
     )
 }
